@@ -1,0 +1,44 @@
+<script>
+
+function showAnswer1() {
+
+    document.getElementById("html_question").innerHTML = "Hypertext Mark-Up Language";
+ 
+}
+
+function showAnswer2() {
+
+    document.getElementById("css_question").innerHTML = "Cascading Style Sheets";
+ 
+}
+function showSum() {
+
+	var sum = 2 + 2;
+    document.getElementById("additup_question").innerHTML = sum;
+
+}
+    $(document).ready(function(){
+    $("#celebrate").click(function(){
+        $(".hiphip").html("HOORAY!");
+    });
+});
+ 
+
+</script>
+
+<p id = "html_question"> What does HTML stand for? </p>
+<button type="button" onclick="showAnswer1()"> ANSWER </button>
+
+
+
+<p id = "css_question"> What does CSS stand for? </p>
+<button type="button" onclick="showAnswer2()"> ANSWER </button>
+
+
+
+<p id = "additup_question"> What 2 + 2? </p>
+<button type="button" onclick="showSum()"> Add It Up! </button>
+
+<p class="hiphip">Yay?</p>
+<p class="hiphip">Super-duper?</p>
+<button id="celebrate">Get excited!</button>
